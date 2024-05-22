@@ -1,5 +1,5 @@
-import Joana from "../../../public/9439779.jpg"; 
-import matheus from "../../../public/9720009.jpg";
+import femaleImg from "../../../public/9439779.jpg"; 
+import maleImg from "../../../public/9720009.jpg";
 import { Container } from "../../components/container/container";
 import { Task } from "../../components/task/index";
 import { Check, ChevronsRight } from "lucide-react";
@@ -16,9 +16,16 @@ interface TaskType {
   date: string;
 }
 
+const isMale = sessionStorage.getItem('user-genre') === 'male';
+
 const users = {
-  Joana: { id: uuidv4(), image: Joana, name: 'Joana' },
-  Matheus: { id: uuidv4(), image: matheus, name: 'Matheus' }
+  I: {
+    id: sessionStorage.getItem('user-token') ?? '',
+    image: isMale ? maleImg : femaleImg,
+    name: sessionStorage.getItem('user-name') ?? ''
+  },
+  Joana: { id: uuidv4(), image: femaleImg, name: 'Joana' },
+  Matheus: { id: uuidv4(), image: maleImg, name: 'Matheus' }
 };
 
 const AppTodo = () => {
@@ -47,13 +54,12 @@ const AppTodo = () => {
         difficult: difficulty,
         category: category,
         date: `${mouths[mouth]} ${day}, ${year}`,
-        user: [users.Matheus],
+        user: [users.I],
         completed: false
       };
     
       // adding task in state; 
       setTasks([...tasks, newTask]);
-
 
       // Clear inputs after adding the task;
       taskRef.current.value = '';
