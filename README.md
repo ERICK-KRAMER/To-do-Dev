@@ -81,4 +81,3 @@ A aplicação é dividida em três colunas principais, cada uma representada por
 4. Execute a aplicação.
    ```sh
    npm run dev 
->>>>>>> bdcf5da1d1694458ba431fd431a8009afd03067e
