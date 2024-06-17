@@ -15,11 +15,7 @@ TODO-DEV é uma aplicação de gerenciamento de tarefas onde os usuários podem 
 
 ### Importações
 
-<<<<<<< HEAD
-- **Imagens dos usuários:** importadas de arquivos locais.
-=======
 - **Imagens dos usuários:**  importadas de arquivos locais.
->>>>>>> bdcf5da1d1694458ba431fd431a8009afd03067e
 - **Componentes:** `Container` e `Task` são componentes personalizados importados.
 - **Ícones:** Ícones `Check` e `ChevronsRight` são importados da biblioteca `lucide-react`.
 - **Hooks do React:** `useRef` e `useState` são usados para gerenciamento de estado e referências.
@@ -43,10 +39,7 @@ TODO-DEV é uma aplicação de gerenciamento de tarefas onde os usuários podem 
 ### Renderização
 
 A aplicação é dividida em três colunas principais, cada uma representada por um componente `Container`:
-<<<<<<< HEAD
 
-=======
->>>>>>> bdcf5da1d1694458ba431fd431a8009afd03067e
 - **Create Task:** Formulário para criação de novas tarefas.
 - **Todo:** Lista de tarefas a serem iniciadas.
 - **In Progress:** Lista de tarefas em andamento.
@@ -57,7 +50,6 @@ A aplicação é dividida em três colunas principais, cada uma representada por
 1. Clone o repositório.
    ```sh
    git clone <https://github.com/ERICK-KRAMER/To-do-Dev/tree/main>
-<<<<<<< HEAD
    ```
 2. Navegue até o diretório do projeto.
    ```sh
@@ -71,7 +63,6 @@ A aplicação é dividida em três colunas principais, cada uma representada por
    ```sh
    npm run dev
    ```
-=======
 2. Navegue até o diretório do projeto.
    ```sh
    cd nome-do-projeto
